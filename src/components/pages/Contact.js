@@ -26,7 +26,7 @@ export default Contact;
 const Wrapper = styled.section`
   height: 100vh;
   background-image: url(${contactimage});
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -68,5 +68,10 @@ const Button = styled.button`
       background-color: rgba(128,252,190,0.4);
       transition: 0.3s;
     }
+  ${sp`
+    height: 40px;
+    width: 250px;
+    font-size: 30px;
+  `};
 `;
 

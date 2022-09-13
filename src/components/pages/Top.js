@@ -19,7 +19,7 @@ export default Top;
 const Wrapper = styled.section`
   height: 100vh;
   background-image: url(${topimage});
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
