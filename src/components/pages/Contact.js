@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import contactimage from '../../img/contact.jpg';
-// import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import spContactimage from '../../img/spContact.jpg';
+import { sp } from '../modules/media'
 
 const Contact = () => {
   const adress = 'kasuya1659@gmail.com'
@@ -13,7 +14,6 @@ const Contact = () => {
     <FadeIn>
       <Wrapper>
         <Button onClick={sendMail}>
-            {/* <MailOutlineIcon style={{fontSize:'1em'}} /> */}
             Message Me
         </Button>
       </Wrapper>
@@ -30,6 +30,9 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  ${sp`
+    background-image: url(${spContactimage});
+    `};
 `;
 
 const fadeIn = keyframes`

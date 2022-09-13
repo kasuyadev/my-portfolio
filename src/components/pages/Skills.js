@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import skillsimage from '../../img/skills.jpg';
+import { sp } from '../modules/media'
 
 const Skills = () => {
   return (
@@ -70,12 +71,22 @@ const Box = styled.div`
   width: 80%;
   background-color: rgba(0,0,0,0.6);
   background-blend-mode: lighten;
+  ${sp`
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height:auto;
+    `};
 `;
 const Title = styled.p`
   text-align: center;
   margin: 0;
   color: white;
   font-size: 130px;
+  ${sp`
+    font-size: 50px;
+    text-decoration: underline;
+    `};
 `;
 const SubTitle = styled.p`
   text-align: center;
@@ -83,6 +94,9 @@ const SubTitle = styled.p`
   color: white;
   font-size: 70px;
   text-decoration: underline solid 2px white;
+  ${sp`
+    font-size: 40px;
+    `};
 `;
 const Text = styled.p`
   text-align: center;
@@ -90,6 +104,10 @@ const Text = styled.p`
   margin: 0 30px 0 30px;
   color: yellow;
   font-size: 50px;
+  ${sp`
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+    `};
 `;
 const TextBox = styled.div`
   align-items: center;
@@ -100,4 +118,7 @@ const ExplanationText = styled.p`
   margin: 0 30px 0 30px;
   color: white;
   font-size: 30px;
+  ${sp`
+    font-size: 18px;
+    `};
 `;

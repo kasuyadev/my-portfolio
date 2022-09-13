@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import worksimage from '../../img/works.jpg';
+import spWorksimage from '../../img/spWork.jpg';
+import { sp } from '../modules/media'
 
 const Works = () => {
   return (
@@ -21,6 +23,9 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  ${sp`
+    background-image: url(${spWorksimage});
+    `};
 `;
 
 const fadeIn = keyframes`
@@ -37,10 +42,19 @@ const FadeIn = styled.section`
 
 const Text = styled.p`
   position: absolute;
-  top: 250px;
-  left: 230px;
+  top: 30%;
+  left: 10%;
   text-align: center;
   margin: 0;
   color: white;
   font-size: 130px;
+  ${sp`
+    position: absolute;
+    top: 32%;
+    left: 22%;
+    text-align: center;
+    margin: 0;
+    color: black;
+    font-size: 50px;
+    `};
 `;

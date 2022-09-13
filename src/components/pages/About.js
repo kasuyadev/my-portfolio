@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import aboutimage from '../../img/about.jpg';
+import spAboutimage from '../../img/spAbout.jpg';
+import { sp } from '../modules/media'
 
 const About = () => {
   
@@ -32,6 +34,9 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  ${sp`
+    background-image: url(${spAboutimage});
+    `};
 `;
 
 const fadeIn = keyframes`
@@ -54,15 +59,28 @@ const Box = styled.div`
   width: 50%;
   background-color: rgba(0,0,0,0.6);
   background-blend-mode: lighten;
+  ${sp`
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height:auto;
+    `};
 `;
 const Title = styled.p`
   text-align: center;
   margin: 0;
   color: white;
   font-size: 130px;
+  ${sp`
+    font-size: 50px;
+    text-decoration: underline;
+    `};
 `;
 const Text = styled.p`
   color: white;
   text-align: center;
   font-size: 25px;
+  ${sp`
+    font-size: 18px;
+    `};
 `;
