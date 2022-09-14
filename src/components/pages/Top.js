@@ -23,6 +23,7 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
   overflow: hidden;
 `;
 
