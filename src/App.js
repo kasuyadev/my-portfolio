@@ -12,6 +12,9 @@ function App() {
     flg,
     setFlg,
   };
+  window.addEventListener('touchmove', function(e){
+    e.preventDefault();
+  });
 
   return (
     <div className="App">
