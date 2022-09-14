@@ -18,13 +18,15 @@ export default Top;
 
 const Wrapper = styled.section`
   height: 100vh;
-  background-image: url(${topimage});
+  /* background-image: url(${topimage});
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
+  background-size: cover; */
+  background: url(${topimage}) center center / cover no-repeat fixed;
+  ${sp`
+    background: url(${topimage}) center center / cover no-repeat;
+  `};
 `;
 
 const fadeIn = keyframes`

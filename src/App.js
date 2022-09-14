@@ -1,5 +1,5 @@
 // import { createContext, useEffect, useRef, useState } from 'react';
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Router from './components/router/Router';
@@ -12,11 +12,12 @@ function App() {
     flg,
     setFlg,
   };
-  useEffect(() => {
-    window.addEventListener('touchmove', function(e){
-      e.preventDefault();
-    });
-  },[])
+  // スクロールを無効にする処理、聞かなかったのでコメントアウト
+  // useEffect(() => {
+  //   window.addEventListener('touchmove', function(e){
+  //     e.preventDefault();
+  //   });
+  // },[])
 
   return (
     <div className="App">
