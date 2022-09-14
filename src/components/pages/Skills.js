@@ -44,11 +44,10 @@ export default Skills;
 
 const Wrapper = styled.section`
   height: 100vh;
-  background-image: url(${skillsimage});
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: url(${skillsimage}) center center / cover no-repeat fixed;
+  ${sp`
+    background: url(${skillsimage}) center center / cover no-repeat;
+  `};
 `;
 
 const fadeIn = keyframes`

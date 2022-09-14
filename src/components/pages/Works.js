@@ -18,14 +18,10 @@ export default Works;
 
 const Wrapper = styled.section`
   height: 100vh;
-  background-image: url(${worksimage});
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: url(${worksimage}) center center / cover no-repeat fixed;
   ${sp`
-    background-image: url(${spWorksimage});
-    `};
+    background: url(${spWorksimage}) center center / cover no-repeat;
+  `};
 `;
 
 const fadeIn = keyframes`

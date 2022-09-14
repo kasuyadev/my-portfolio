@@ -29,14 +29,10 @@ export default About;
 
 const Wrapper = styled.section`
   height: 100vh;
-  background-image: url(${aboutimage});
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: url(${aboutimage}) center center / cover no-repeat fixed;
   ${sp`
-    background-image: url(${spAboutimage});
-    `};
+    background: url(${spAboutimage}) center center / cover no-repeat;
+  `};
 `;
 
 const fadeIn = keyframes`

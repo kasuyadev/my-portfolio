@@ -25,14 +25,10 @@ export default Contact;
 
 const Wrapper = styled.section`
   height: 100vh;
-  background-image: url(${contactimage});
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: url(${contactimage}) center center / cover no-repeat fixed;
   ${sp`
-    background-image: url(${spContactimage});
-    `};
+    background: url(${spContactimage}) center center / cover no-repeat;
+  `};
 `;
 
 const fadeIn = keyframes`
