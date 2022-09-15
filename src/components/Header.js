@@ -182,7 +182,7 @@ const SpMenu = styled.div`
     ${sp`
         display: block;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         top: 0;
         bottom: 0;
         background-color: rgba(0,0,0,0.4);
