@@ -83,7 +83,7 @@ const Title = styled.p`
   color: white;
   font-size: 130px;
   ${sp`
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: underline;
     `};
 `;
@@ -94,7 +94,7 @@ const SubTitle = styled.p`
   font-size: 70px;
   text-decoration: underline solid 2px white;
   ${sp`
-    font-size: 40px;
+    font-size: 30px;
     `};
 `;
 const Text = styled.p`
@@ -104,7 +104,7 @@ const Text = styled.p`
   color: yellow;
   font-size: 50px;
   ${sp`
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 10px 0 10px;
     `};
 `;
@@ -118,6 +118,6 @@ const ExplanationText = styled.p`
   color: white;
   font-size: 30px;
   ${sp`
-    font-size: 18px;
+    font-size: 15px;
     `};
 `;

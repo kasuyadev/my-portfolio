@@ -99,8 +99,9 @@ const LinkText = styled.p`
     };
 
     ${sp`
-        margin: 5px;
+        margin: 0;
         text-decoration: underline;
+        font-size: 35px;
     `};
     
 `;

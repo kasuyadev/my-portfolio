@@ -46,8 +46,8 @@ const Text = styled.p`
   font-size: 130px;
   ${sp`
     position: absolute;
-    top: 32%;
-    left: 22%;
+    top: 30vh;
+    left: 20%;
     text-align: center;
     margin: 0;
     color: black;
